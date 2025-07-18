@@ -50,6 +50,7 @@ nav a{
     scroll-behavior: smooth;
     padding: 10px 20px;
     transition: 0.7s ease;
+    text-decoration: none;
 }
 nav a:hover{
     color: white;
