@@ -134,12 +134,14 @@ nav a:active{
 }
 .kotakpenuh{
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   text-align: center;
   gap: 20px;
 }
 .kotak1 {
-  display: inline-block; 
+  display: flex;
+  flex-direction: column; 
   text-align: center;
   border: 6px solid #e3000b;
   padding: 20px;
@@ -147,7 +149,10 @@ nav a:active{
   width: fit-content;
   background-color: #111;
   margin-top: 20px;
-    transition: 0.7s ease;
+  transition: 0.7s ease;
+  flex: 1 1 30%;             /* ✅ fleksibel, bisa muat 3 per baris */
+  max-width: 300px;          /* ✅ biar gak terlalu gede */
+  min-width: 200px; 
 }
 
 .Get-to-know h1{
@@ -155,38 +160,24 @@ nav a:active{
   text-align: center;
 }
 
-.kotak2 {
-  display: inline-block; 
-  text-align: center;
-  border: 6px solid #e3000b;
-  padding: 20px;
-  border-radius: 10px;
-  width: fit-content;
-  background-color: #111;
-  margin-top: 20px;
-    transition: 0.7s ease;
-}
 
-.kotak3{
-  display: inline-block; 
-  text-align: center;
-  border: 6px solid #e3000b;
-  padding: 20px;
-  border-radius: 10px;
-  width: fit-content;
-  background-color: #111;
-  margin-top: 20px;
-    transition: 0.7s ease;
-}
 
-.kotak1:hover,
-.kotak2:hover,
-.kotak3:hover{
+.kotak1:hover{
   transform: scale(1.1);
   transition: 0.7s ease;
 }
 
+@media (max-width: 768px) {
+  .kotak {
+    flex: 1 1 45%; /* ✅ jadi 2 kotak per baris */
+  }
+}
 
+@media (max-width: 480px) {
+  .kotak {
+    flex: 1 1 100%; /* ✅ jadi 1 kotak per baris */
+  }
+}
 
 
 
