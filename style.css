@@ -1,0 +1,196 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    font-family: 'Bitcount Prop Single';
+    box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    filter: drop-shadow(10px);
+    background-color: transparent;
+
+}
+body {
+  background-color: black;
+  padding-top: 80px; /* Sesuaikan dengan tinggi navbar */
+  font-family: 'Bitcount Prop Single';
+}
+
+
+
+
+nav {
+  background-color: #ffed00;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  padding: 0 30px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  position: fixed; /* Gunakan fixed agar selalu di atas */
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999; /* Supaya tidak ketumpuk */
+  border-bottom: 10px solid #e3000b;
+}
+
+nav a{
+    color: #e3000b;
+    text-align: justify;
+    scroll-behavior: smooth;
+    padding: 10px 20px;
+    transition: 0.7s ease;
+}
+nav a:hover{
+    color: white;
+}
+
+nav a:active{
+  transition: 1s ease;
+}
+
+.about-me {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 100px;
+  gap: 60px;
+  color: white;
+  background-color: black;
+}
+
+.about-me-img img {
+  width: 300px;
+  height: auto;
+  margin: 20px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+  transition: ease 0.7s;
+}
+
+.about-me-img img:hover {
+  transform: scale(1.1);
+  transition: 0.7s ease;
+}
+
+
+.about-me-text h1 {
+  font-size: 40px;
+  color: #ccc;
+}
+
+.about-me-text .Fadli {
+  color: #e3000b;
+}
+
+.about-me-text h2 {
+  font-size: 22px;
+  font-weight: normal;
+}
+
+.about-me-text p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #ccc;
+}
+
+.about-me-content{
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+  font-size: 20px;
+}
+
+.about-me-content a{
+  display: flex;
+  color: #ccc;
+  padding: 5px;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.about-me-content a:hover{
+  color: #e3000b;
+  transform: (1,1);
+  transition: 0.4s ease;
+}
+
+.Get-to-know {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding: 60px 100px;
+  color: white;
+  background-color: black;
+}
+.kotakpenuh{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  gap: 20px;
+}
+.kotak1 {
+  display: inline-block; 
+  text-align: center;
+  border: 6px solid #e3000b;
+  padding: 20px;
+  border-radius: 10px;
+  width: fit-content;
+  background-color: #111;
+  margin-top: 20px;
+    transition: 0.7s ease;
+}
+
+.Get-to-know h1{
+  display: inline-block;
+  text-align: center;
+}
+
+.kotak2 {
+  display: inline-block; 
+  text-align: center;
+  border: 6px solid #e3000b;
+  padding: 20px;
+  border-radius: 10px;
+  width: fit-content;
+  background-color: #111;
+  margin-top: 20px;
+    transition: 0.7s ease;
+}
+
+.kotak3{
+  display: inline-block; 
+  text-align: center;
+  border: 6px solid #e3000b;
+  padding: 20px;
+  border-radius: 10px;
+  width: fit-content;
+  background-color: #111;
+  margin-top: 20px;
+    transition: 0.7s ease;
+}
+
+.kotak1:hover,
+.kotak2:hover,
+.kotak3:hover{
+  transform: scale(1.1);
+  transition: 0.7s ease;
+}
+
+
+
+
+
+
+
+
+
